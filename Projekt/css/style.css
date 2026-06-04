@@ -1,7 +1,15 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
 #keyboard-container{ 
     background-color: rgb(172, 107, 107);
  width: 1000px;
  height: 500px;
+ border: thick;
+ border-color: black;
+ 
 }
 
 body{
@@ -10,6 +18,39 @@ body{
   align-items: center;
 }
 
+#first-row{
+  background-color: rgb(255, 0, 0);
+  width: 1000px;
+  height: 30px;
+  display: grid;
+  grid-template-columns: repeat(13, 2fr);
+}
 
+
+#ESP, #f1, #f2, #f3, #f4, #f5, #f6, #f7, #f8, #f9, #f10, #f11, #f12{
+  display: flex;
+  background-color: rgb(220, 14, 14);
+  border-color: white;
+  height: 30px;
+  
+}
+h2{
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+#second-row{
+  background-color: rgb(255, 149, 0);
+  width: 1000px;
+  height: 45px;
+  display: grid;
+  grid-template-columns: repeat(14, 2fr);
+  text-align: center;
+}
+
+#§{
+  width: 15px;
+}
 
 
