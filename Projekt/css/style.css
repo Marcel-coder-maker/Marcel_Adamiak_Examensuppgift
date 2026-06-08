@@ -1,56 +1,96 @@
 *{
   padding: 0;
   margin: 0;
-}
-
-#keyboard-container{ 
-    background-color: rgb(172, 107, 107);
- width: 1000px;
- height: 500px;
- border: thick;
- border-color: black;
- 
+  box-sizing: border-box;
 }
 
 body{
-    display: flex;
- justify-content: center;
-  align-items: center;
+  display: flex;
+justify-content: center;
+align-content: center;
+min-height: 100vh;
+}
+
+h2{
+  font-size: 24px;
+font-weight: bold;
+}
+
+#keyboard-container{
+  width: 1000px;
+  height: 500px;
+  background-color: rgb(147, 125, 125);
+  border: 3px solid blue;
 }
 
 #first-row{
-  background-color: rgb(255, 0, 0);
-  width: 1000px;
-  height: 30px;
   display: grid;
-  grid-template-columns: repeat(13, 2fr);
+  grid-template-columns: repeat(13, 1fr);
+  height: 45px;
+  background: red;
 }
 
-
-#ESP, #f1, #f2, #f3, #f4, #f5, #f6, #f7, #f8, #f9, #f10, #f11, #f12{
+#first-row > div{
   display: flex;
-  background-color: rgb(220, 14, 14);
-  border-color: white;
-  height: 30px;
-  
-}
-h2{
-  font-size: 24px;
-  font-weight: bold;
-  color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
 }
 
 #second-row{
-  background-color: rgb(255, 149, 0);
-  width: 1000px;
-  height: 45px;
+display: grid;
+grid-template-columns: repeat(13, 1fr);
+height: 45px;
+background: orange;
+}
+
+#second-row > div{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid black;
+}
+
+#third-row{
   display: grid;
-  grid-template-columns: repeat(14, 2fr);
-  text-align: center;
+ grid-template-columns: repeat(12, 1fr);
+  height: 45px;
+  background: yellow
 }
 
-#§{
-  width: 15px;
+#third-row > div{
+  display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid black;
 }
 
+#forth-row{
+   display: grid;
+ grid-template-columns: repeat(11, 1fr);
+  height: 45px;
+  background: green
+}
+
+#forth-row > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+
+#fifth-row{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  height: 45px;
+  background: blue;
+}
+
+#fifth-row > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
 
