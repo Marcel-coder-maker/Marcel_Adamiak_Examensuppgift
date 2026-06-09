@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.active-key{
+  background-color: white !important;
+  color: black;
+}
+
 body{
   display: flex;
 justify-content: center;
@@ -18,9 +23,10 @@ font-weight: bold;
 
 #keyboard-container{
   width: 1000px;
-  height: 500px;
+  height: 300px;
   background-color: rgb(147, 125, 125);
   border: 3px solid blue;
+  border-radius: 5px;
 }
 
 #first-row{
@@ -28,13 +34,14 @@ font-weight: bold;
   grid-template-columns: repeat(13, 1fr);
   height: 45px;
   background: red;
-}
+  }
 
 #first-row > div{
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
+  border-radius: 7px;
 }
 
 #second-row{
@@ -94,3 +101,17 @@ border: 1px solid black;
   border: 1px solid black;
 }
 
+#sisth-row{
+   display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 45px;
+  background: violet;
+}
+
+
+#sisth-row > div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
