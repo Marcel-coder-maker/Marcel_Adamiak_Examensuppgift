@@ -79,3 +79,6 @@ document.addEventListener("keyup", (event) => {
         }
     }
 });
+
+
+//Btw några fungerar inte till exempel min backspace Fn och fn lock men förutom det så fungerar 
